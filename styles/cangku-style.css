@@ -71,6 +71,21 @@ form {/*搜索框相关*/
   button:hover {
     background-color: #0056b3;
   }
+.chuangti{
+    display: grid;
+}
+    .sidebar{
+        position: sticky;
+        margin: auto;
+        left: 200px;
+    }
+    .scrollable-container{
+        height: 400px;
+        width: 400px;
+        position: sticky;
+        margin: auto;
+        overflow-y: auto;
+    }
 
 
 body {
