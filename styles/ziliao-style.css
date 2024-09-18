@@ -2,7 +2,7 @@
     display: grid;
 }
 .site-header {
-    display:grid ;
+    display: flex !important;
     background-color: #000000;
     color: #fff;
     padding: 0;
@@ -15,8 +15,10 @@
     border-bottom: 1px solid #ffffff;
   }
   
-  .site-header .logo img {
-    height: 50px;
+  .site-header img {
+    width: 50px;
+    display: flex;
+    margin: 30px 10px 0px 25px;
   }
   
   .main-navigation ul {
@@ -49,6 +51,7 @@ form {
   }
   
   input[type="search"] {
+    margin: 15px 15px;
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -64,6 +67,8 @@ form {
     margin-left: 8px;
   }
   .sousuo-button{
+    margin:15px 0 ;
+    display: flex;
     color: #ffffff;
     background-color: #0056b3;
   }
