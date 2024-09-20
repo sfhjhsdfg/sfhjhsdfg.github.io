@@ -38,11 +38,13 @@
     border-left: 2px solid #fff;
     border-right:2px solid #fff;
 }
-form {/*搜索框相关*/
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-  }
+form {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: 100px;
+}
   
   input[type="search"] {
     margin: 15px 15px;

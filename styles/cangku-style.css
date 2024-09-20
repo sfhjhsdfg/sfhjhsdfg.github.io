@@ -38,11 +38,13 @@
     border-left: 2px solid #fff;
     border-right:2px solid #fff;
 }
-form {/*搜索框相关*/
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-  }
+form {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: 100px;
+}
   
   input[type="search"] {
     margin: 15px 15px;
@@ -72,16 +74,16 @@ form {/*搜索框相关*/
     background-color: #0056b3;
   }
 .chuangti{
-    display: grid;
+    display:flex;
 }
     .sidebar{
         position: sticky;
         margin: auto;
         left: 200px;
     }
-    .scrollable-container{
-        height: 400px;
-        width: 400px;
+    .text-center{
+        height: 600px;
+        width: 600px;
         position: sticky;
         margin: auto;
         overflow-y: auto;

@@ -14,7 +14,7 @@
   
   .site-header img {
     width: 50px;
-    display: flex;
+    height: 50px;
     margin: 30px 10px 0px 25px;
   }
   
@@ -38,41 +38,100 @@
     border-left: 2px solid #fff;
     border-right:2px solid #fff;
 }
-form {/*搜索框相关*/
+  form {
     display: flex;
     justify-content: center;
     margin: 20px;
+    margin-left: auto;
+    margin-right: 100px;
   }
-  
-  input[type="search"] {
-    margin: 15px 15px;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 8px 16px;
-    font-size: 18px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 8px;
-  }
-  .sousuo-button{
-    margin:15px 0 ;
+    
+    input[type="search"] {
+      margin: 15px 15px;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    button {
+      padding: 8px 16px;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 8px;
+    }
+    .sousuo-button{
+      margin:15px 0 ;
+      display: flex;
+      color: #ffffff;
+      background-color: #0056b3;
+    }
+
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+
+.main-text{
+  display:grid;
+}
+  .logo{
     display: flex;
-    color: #ffffff;
     background-color: #0056b3;
   }
-
-  
-  button:hover {
-    background-color: #0056b3;
+    .logo img{
+      width: 50px;
+      height: 50px;
+      margin: 10px 10px 10px 20px;
+    }
+    .hengtiao{
+      display: grid;
+      margin: 20px 0;
+    }
+      .tiao1{
+        width: 100px;
+        height: 5px;
+        background-color: #fff;
+      }
+      .tiao2{
+        width: 50px;
+        height: 5px;
+        background-color: #fff;
+      }
+      .tiao3{
+        width: 20px;
+        height: 5px;
+        background-color: #fff;
+      }
+    .zhanwei{
+      width: 300px;
+    }
+  .text-center{
+    display: flex;
   }
+    .center-text,
+    .right-text,
+    .left-text{
+      font-size: 20px;
+    }
+    .left-text{
+      width: 150px;
+      padding: 10px;
+    }
+    .center-text{
+      overflow-y: auto;
+      width: 600px;
+      height: 600px;
+      padding: 10px;
+    }
+    .right-text{
+      width: 200px;
+      margin-left: auto;
+    }
 
-  body {
+body {
     width: 1200px;/*width：元素的宽度*/
     margin: 10px auto;/*margin（外边距）：是围绕元素边界外侧的空间。*/
     background-color: #ffffff;/*background-color：元素内容和内边距底下的颜色*/

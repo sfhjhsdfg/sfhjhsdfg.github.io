@@ -41,14 +41,13 @@
     border-left: 2px solid #fff;
     border-right:2px solid #fff;
 }
-.main{
-    display: grid;
-}
 form {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: 100px;
+}
   
   input[type="search"] {
     margin: 15px 15px;
@@ -90,6 +89,9 @@ body {
     background-color: #ffffff;/*background-color：元素内容和内边距底下的颜色*/
     padding: 110px 30px 30px 30px;/*padding（内边距）：是指内容周围的空间。在下面的例子中，它是段落文本周围的空间。*/
     border: 2px solid black;/*border（边框）：是紧接着内边距的线。*/
+}
+.main{
+  display: grid;
 }
 .caidan{
     border: 2px solid #000000;
