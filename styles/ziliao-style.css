@@ -52,7 +52,7 @@ form {
     border-radius: 4px;
   }
   
-  button {
+  .collapsible {
     padding: 8px 16px;
     font-size: 18px;
     border: none;
@@ -127,3 +127,20 @@ body {
     border: 2px solid black;/*border（边框）：是紧接着内边距的线。*/
 }
 
+.button1 {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.article {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  display: none; /* 默认不显示 */
+  transition: height 0.3s ease;
+}
+.article.active {
+  display: block; /* 显示文章 */
+  max-width: 800px;
+  margin-left :10px;
+}
