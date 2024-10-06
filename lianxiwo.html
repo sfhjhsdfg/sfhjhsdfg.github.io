@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GitHub Profile Clone</title>
+        <link href="styles/lianxiwo.css" rel="stylesheet"/>
+        <link href="styles/daohang.css" rel="stylesheet"/>
+        <script src="scripts/lianxiwo.js" defer></script>
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <img src="images/0.jig.jpg" alt="GitHub Logo" class="logo">
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">返回首页</a>
+                <a href="cangku.html" class="nav-item">返回仓库</a>
+                <a href="ziliao.html" class="nav-item">返回资料</a>
+                <a href="guanyuwo.html" class="nav-item">关于我</a>
+            </nav>
+            <input type="text" placeholder="Search or jump to..." class="search-bar">
+        </header>
+        <div class="container">
+            <aside class="sidebar">
+                <div class="image-container">
+                    <div class="image-wrapper" id="image"></div>
+                </div>
+                <h1 class="profile-name">GitHub</h1>
+                <div class="profile-username">jior</div>
+                <button class="edit-profile-button">我的GitHub主页</button>
+            </aside>
+            <main class="main-content">
+                <div class="tab-container">
+                    <a href="#" class="tab">Overview</a>
+                    <a href="#" class="tab active">Repositories</a>
+                    <a href="#" class="tab">Projects</a>
+                    <a href="#" class="tab">Packages</a>
+                </div>
+                <ul class="repo-list" id="repoList">
+                    <!-- Repository items will be dynamically added here -->
+                </ul>
+            </main>
+        </div>
+    </body>
+</html>
