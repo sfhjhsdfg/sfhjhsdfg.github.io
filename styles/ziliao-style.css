@@ -13,12 +13,13 @@
     width: 100%;
     z-index: var(--z-index-main-header);
     border-bottom: 1px solid #ffffff;
+    align-items: center;
   }
   
   .site-header img {
     width: 50px;
     display: flex;
-    margin: 30px 10px 0px 25px;
+    margin-left: 30px;
   }
   
   .main-navigation ul {
@@ -35,12 +36,6 @@
     text-decoration: none;
   }
 
-  .rounded-border {
-    padding: 0;
-    margin: 0 10px;
-    border-left: 2px solid #fff;
-    border-right:2px solid #fff;
-}
 form {
   display: flex;
   justify-content: center;
@@ -77,6 +72,48 @@ form {
     background-color: #0056b3;
   }
 
+.chuangkou{
+    display: flex;
+}
+  .caidan{
+    border: 2px solid #000000;
+    left: 150px;
+    width: 300px;
+    height: 620px;
+    overflow-y: auto;
+  }
+    .collapsible {
+      color: #000000;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+      .content {
+        font-size: 15px;
+        padding: 0 20px;
+        display: none;
+        overflow: hidden;
+        font-family: "Open Sans", sans-serif;
+      }
+      .content p {
+        margin: 10px 0;
+      }
+  .main{
+    display: flex;
+  }
+    .neirong{
+      overflow: auto;
+      padding: 0 20px;
+      width: auto;
+      height: 600px;
+      top: 200px;
+      left: 500px;
+    }
 html {
     font-size: 15px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
     font-family: "Open Sans", sans-serif; /* 这应该是你从 Google Fonts 得到的其余输出。 */
@@ -84,56 +121,9 @@ html {
 }
 body {
     width: 1200px;/*width：元素的宽度*/
-    height: 2000px;
     margin: 10px auto;/*margin（外边距）：是围绕元素边界外侧的空间。*/
     background-color: #ffffff;/*background-color：元素内容和内边距底下的颜色*/
     padding: 110px 30px 30px 30px;/*padding（内边距）：是指内容周围的空间。在下面的例子中，它是段落文本周围的空间。*/
     border: 2px solid black;/*border（边框）：是紧接着内边距的线。*/
 }
-.main{
-  display: grid;
-}
-.caidan{
-    border: 2px solid #000000;
-    position: fixed;
-    left: 150px;
-    width: 300px;
-    height: 620px;
-    overflow-y: auto;
-}
-.collapsible {
-    color: #000000;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
 
-  .content {
-    font-size: 15px;
-    padding: 0 20px;
-    display: none;
-    overflow: hidden;
-    font-family: "Open Sans", sans-serif;
-  }
-  .content p {
-    margin: 10px 0;
-  }
-.neirong{
-    display: grid;
-    padding: 0 20px;
-    width: 820px;
-    height: 520px;
-    top: 200px;
-    left: 500px;
-    position: absolute;
-}
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    margin-top: 2000px; /* 将页脚推到页面底部 */
-}

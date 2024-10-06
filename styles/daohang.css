@@ -1,0 +1,31 @@
+.nav-item {/*导航栏跳跃效果*/
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #4CAF50;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  .nav-item:hover {
+    transform: translateY(-5px);
+  }
+  .nav-item:hover::after {
+    transform: scaleX(1);
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }

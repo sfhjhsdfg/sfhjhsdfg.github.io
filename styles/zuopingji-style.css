@@ -10,12 +10,13 @@
     width: 100%;
     z-index: var(--z-index-main-header);
     border-bottom: 1px solid #ffffff;
+    align-items: center;
   }
   
   .site-header img {
     width: 50px;
     display: flex;
-    margin: 30px 10px 0px 25px;
+    margin-left: 30px;
   }
   
   .main-navigation ul {
@@ -73,8 +74,20 @@ form {
   button:hover {
     background-color: #0056b3;
   }
+.zhuti{
+  display: flex;
+}
+  .left-text{
+    width: 300px;
+    height: 600px;
+  }  
+  .right-text{
+    width: auto;
+    height: 600px;
+    overflow: auto;
+  }
 
-  body {
+body {
     width: 1200px;/*width：元素的宽度*/
     margin: 10px auto;/*margin（外边距）：是围绕元素边界外侧的空间。*/
     background-color: #ffffff;/*background-color：元素内容和内边距底下的颜色*/

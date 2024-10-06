@@ -10,6 +10,7 @@
     width: 100%;
     z-index: var(--z-index-main-header);
     border-bottom: 1px solid #ffffff;
+    align-items: center;
   }
   .logo{
     display: flex;
@@ -17,7 +18,7 @@
     .site-header img {
       width: 50px;
       height: 50px;
-      margin: 30px 10px 0px 25px;
+      margin-left:30px;
     }
     
   .main-navigation ul {
@@ -34,12 +35,12 @@
     text-decoration: none;
   }
 
-  .rounded-border {
+  /*.rounded-border {
     padding: 0;
     margin: 0 10px;
     border-left: 2px solid #fff;
     border-right:2px solid #fff;
-}
+}*/
   form {
       display: flex;
       justify-content: center;
@@ -106,6 +107,5 @@ body {
     padding: 150px 30px 30px 30px;
     border: 2px solid black;
 }
-
 
 
