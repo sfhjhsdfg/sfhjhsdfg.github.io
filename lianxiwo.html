@@ -6,8 +6,10 @@
         <title>GitHub Profile Clone</title>
         <link href="styles/lianxiwo.css" rel="stylesheet"/>
         <link href="styles/daohang.css" rel="stylesheet"/>
+        <link href="styles/draw.css" rel="stylesheet"/>
         <script src="scripts/lianxiwo.js" defer></script>
         <script src="scripts/main.js" defer></script>
+        <script src="scripts/draw.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -16,6 +18,7 @@
                 <a href="index.html" class="nav-item">返回首页</a>
                 <a href="cangku.html" class="nav-item">返回仓库</a>
                 <a href="ziliao.html" class="nav-item">返回资料</a>
+                <a href="zuopingji.html" class="nav-item">返回作品集</a>
                 <a href="guanyuwo.html" class="nav-item">关于我</a>
             </nav>
             <input type="text" placeholder="Search or jump to..." class="search-bar">
@@ -27,7 +30,11 @@
                 </div>
                 <h1 class="profile-name">GitHub</h1>
                 <div class="profile-username">jior</div>
-                <button class="edit-profile-button">我的GitHub主页</button>
+                <button class="edit-profile-button"><a href="https://github.com/sfhjhsdfg">我的GitHub主页</a></button>
+                <p>我的邮箱：2119947612@qq.com</p>
+                <p><span style="padding:0 0 0 78px;">a2119947612@163.com</span></p>
+                <p><span style="padding:0 0 0 78px;">leigengji@gmial.com</span></p>
+                <p>我的电话：15024696926</p>
             </aside>
             <main class="main-content">
                 <div class="tab-container">
@@ -39,6 +46,16 @@
                 <ul class="repo-list" id="repoList">
                     <!-- Repository items will be dynamically added here -->
                 </ul>
+                <div class="paint-app">
+                    <div class="toolbar">
+                        <label for="color">颜色：</label>
+                        <input type="color" id="color" value="#000000">
+                        <label for="lineWidth">画笔大小：</label>
+                        <input type="range" id="lineWidth" min="1" max="50" value="5">
+                        <button id="clear">清除画布</button>
+                    </div>
+                    <canvas id="canvas" width="800" height="600"></canvas>
+                </div>
             </main>
         </div>
     </body>

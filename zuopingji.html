@@ -9,7 +9,11 @@
         <link
             href="https://fonts.googleapis.com/css?family=Open+Sans"
             rel="stylesheet" />
+            
         <script src="scripts/main.js" defer></script>
+        <script src="scripts/draw.js" defer></script>
+        <script src="scripts/zuopingji.js" defer></script>
+        <script src="lizi.js"></script>
     </head>
     <body>
         <div class="zhanwei"></div>
@@ -18,14 +22,12 @@
                 <img src="images/0.jig.jpg" alt="Logo">
             </div>
             <nav class="main-navigation">
-                <ul>
-                    <li class="nav-item"><a href="index.html">首页</a></li>
-                    <li class="nav-item"><a href="cangku.html">个人仓库</a></li>
-                    <li class="nav-item"><a href="ziliao.html">资料</a></li>
-                    <li class="nav-item"><a href="zuopingji.html"><h1><span style="color: blue;">作品集</span></h1></a></li>
-                    <li class="nav-item"><a href="guanyuwo.html">关于我</a></li>
-                    <li class="nav-item"><a href="lianxiwo.html">联系我</a></li>
-                </ul>
+                    <a href="index.html" class="nav-item">首页</a>
+                    <a href="cangku.html" class="nav-item">个人仓库</a>
+                    <a href="ziliao.html" class="nav-item">资料</a>
+                    <a href="zuopingji.html" class="nav-item"><h1><span style="color: blue;">作品集</span></h1></a>
+                    <a href="guanyuwo.html" class="nav-item">关于我</a>
+                    <a href="lianxiwo.html" class="nav-item">联系我</a>
             </nav>
             <form action="/search" method="get">
                 <input type="search" id="search" name="q" placeholder="输入关键词...">
@@ -34,58 +36,31 @@
         </header>
         <main class="zhuti">
             <div class="left-text">
-                <p>这里是目录</p>
+                <div class="image-container">
+                    <div class="image-wrapper" id="image"></div>
+                </div>
+                <h1><span style="padding-left:33% ;font-size: 60px;">jior</span></h1>
             </div>
             <div class="right-text">
-                <p>这里是内容</p>
-                <p>=============================================================================================</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
-                <p>这里是内容</p>
+                <div class="scroll-container">
+                    <div class="scroll-content" id="scrollContent">
+                        <div class="scroll-item">项目 1</div>
+                        <div class="scroll-item">项目 2</div>
+                        <div class="scroll-item">项目 3</div>
+                        <div class="scroll-item">项目 4</div>
+                        <div class="scroll-item">项目 5</div>
+                    </div>
+                </div>
+                <div class="paint-app">
+                    <div class="toolbar">
+                        <label for="color">颜色：</label>
+                        <input type="color" id="color" value="#000000">
+                        <label for="lineWidth">画笔大小：</label>
+                        <input type="range" id="lineWidth" min="1" max="50" value="5">
+                        <button id="clear">清除画布</button>
+                    </div>
+                    <canvas id="canvas" width="800" height="600"></canvas>
+                </div>
             </div>
         </main>
     </body>
