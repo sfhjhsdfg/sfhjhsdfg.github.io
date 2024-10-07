@@ -9,11 +9,13 @@
         <link
             href="https://fonts.googleapis.com/css?family=Open+Sans"
             rel="stylesheet" />
+            <link href="styles/code-text-style.css" rel="stylesheet"/>
         <script src="scripts/ziliao.js" defer></script>
         <script src="scripts/main.js" defer></script>
         <script src="scripts/wenzhang.js" defer></script>
     </head>
     <body>
+        <div class="background-picture"></div>
         <header class="site-header">
             <div class="logo">
                 <img src="images/0.jig.jpg" alt="Logo">
@@ -39,8 +41,20 @@
                     <button class="collapsible">html</button>
                     <div class="content">
                         <button class="button1" onclick="loadArticle('section-jianjie')">HTML简介</button>
-                        <button class="button1" onclick="loadArticle('section1-1')">1-1</button>
-                        <button class="button1" onclick="loadArticle('section1-2')">1-2</button>
+                        <button class="button1" onclick="loadArticle('section1-1-1')">1-1常用元素</button>
+                        <button class="button1" onclick="loadArticle('section1-1-2')">1-2常用属性</button>
+                    </div>
+                    <button class="collapsible">CSS</button>
+                    <div class="content">
+                        <button class="button1" onclick="loadArticle('section1-2-1')">CSS简介</button>
+                        <button class="button1" onclick="loadArticle('section1-2-2')">CSS语法结构基础</button>
+                        <button class="button1" onclick="loadArticle('section1-2-3')">CSS常用参数</button>
+                    </div>
+                    <button class="collapsible">JavaScript</button>
+                    <div class="content">
+                        <button class="button1" onclick="loadArticle('section1-2-1')">JavaScript</button>
+                        <button class="button1" onclick="loadArticle('section1-2-2')">JavaScript</button>
+                        <button class="button1" onclick="loadArticle('section1-2-3')">JavaScript常用函数</button>
                     </div>
                 </div>
                 <button class="collapsible">unity</button>
@@ -86,10 +100,10 @@
             <main class="main">
                 <div class="neirong">
                     <article id="nothing" class="article">
-                            <p>===========================================================================================================</p>
+                            <p>====================================================================</p>
                             <p><h1>我先贴一些我在用的网站在这</h1></p>
                             <p><h1><strong>真神</strong><a href="https://github.com/">Github</a><span style="color: brown;">不接受反驳</span></h1></p>
-                            <p>首当其冲就是和web学习有关的</p>
+                            <p>视频网站也是很好的学习地点，活用资源</p>
                             <p></p><a href="https://developer.mozilla.org/zh-CN/docs/Web">MDN</a>这是一个适合初学者学习web的网站，内容很详细</p>
                             <p><a href="https://www.runoob.com/">菜鸟教程</a>里面涵盖了大量的有关各种开发的知识</p>
                             <p><a href="https://www.newcult.co/">Cult</a>、<a href="https://ui.aceternity.com/">Aceternity</a>、<a href="https://magicui.design/">Magic UI</a>、<a href="https://ui.shadcn.com/docs/installation">Shadcn UI</a>这些都是ui相关的网站</p>
@@ -102,25 +116,74 @@
                             <p><a href="https://www.thingiverse.com/">Thingiverse</a>最大的3D模型网站，适用于3D打印玩家</p>
                             <p>还有一些零碎的贴图纹理和模型网站，这里就不一一列举了</p>
                             <p><a href="https://js.design/login?by=phone">即时设计</a>忘了是干啥的，应该是在线软件界面设计的</p>
+                            <p><a href="https://codesandbox.io/">codesandbox</a>是个在线的编辑器，能够实时预览</p>
+                            <p><a href="https://stackblitz.com/">stackblitz</a>是个在线的编辑器，能够实时预览</p>
+                            <p><a href="https://codepen.io/">codepen</a>是个在线的网页编辑器，能够实时预览</p>
                     </article>
                     <article id="section-jianjie" class="article">
                         <h2>HTML简介</h2>
                         <p>
-                            这超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用来结构化 Web 网页及其内容的标记语言。网页内容可以是：一组段落、一个重点信息列表、也可以含有图片和数据表格。正如标题所示，本文将对 HTML 及其功能做一个基本介绍。
+                            <p>这超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用来结构化 Web 网页及其内容的标记语言。网页内容可以是：一组段落、一个重点信息列表、也可以含有图片和数据表格。正如标题所示，本文将对 HTML 及其功能做一个基本介绍。</p>
 
-                            HTML 到底是什么？
-                            HTML 是一种用于定义内容结构的标记语言。HTML 由一系列的元素组成，这些元素可以用来包围不同部分的内容，使其以某种方式呈现或者工作。一对标签可以为一段文字或者一张图片添加超链接，将文字设置为斜体，改变字号，等等。例如，键入下面一行内容：
+                            <p>HTML 到底是什么？
+                            HTML 是一种用于定义内容结构的标记语言。HTML 由一系列的元素组成，这些元素可以用来包围不同部分的内容，使其以某种方式呈现或者工作。一对标签可以为一段文字或者一张图片添加超链接，将文字设置为斜体，改变字号，等等。例如，键入下面一行内容：</p>
                             
-                            <code>My cat is very grumpy</code>
-                            可以将这行文字封装成一个段落元素来使其独立成行：
-                            <code><p></code>My cat is very grumpy<code></p></code>
-                            元素的主要部分有：
+                            <p class="code-text"><code>这是一段文本</code></p>
+                            <p>可以将这行文字封装成一个段落元素来使其独立成行：</p>
+                            <p class="code-text"><code><span class="super-color">&lt;p&gt;</span>这是一段文本<span class="super-color">&lt;/p&gt;</span></code></p>
+                            <p>元素的主要部分有：</p>
 
-                            开始标签（Opening tag）：包含元素的名称（本例为 p），及一对包围名称的尖括号。这表示元素从这里开始或者开始起作用——在本例中即段落由此开始。
+                            <p>开始标签（Opening tag）：包含元素的名称（本例为 p），及一对包围名称的尖括号。这表示元素从这里开始或者开始起作用——在本例中即段落由此开始。
                             结束标签（Closing tag）：与开始标签相似，只是其在元素名之前包含了一个正斜杠。这表示元素到这里结束——在本例中即段落在此结束。初学者常常会犯忘记添加结束标签的错误，这可能会产生一些奇怪的结果。
                             内容（Content）：元素的内容，本例中就是所输入的文本本身。
-                            元素（Element）：开始标签、结束标签与内容相结合，便是一个完整的元素。
-                        </p>
+                            元素（Element）：开始标签、结束标签与内容相结合，便是一个完整的元素。</p>
+                    </article>
+                    <!--常用元素-->
+                    <article id="section1-1-1" class="article">
+                        <h2>HTML常用元素</h2>
+                        <p><span style="color:red; font-size:10px;">批注：这可以看作是我的个人笔记，用于简单学习和记忆，并不全，目的是为了能够构筑最简单的网站，我一般都是用到什么再去查什么，这里的东西是几乎必定会用到并且常用的</span></p>
+                        <p><code class="super-color">&lt;div&gt;</code>：内容划分元素</p>
+
+                        <p><code class="super-color">&lt;div&gt;</code> 元素是流式内容的通用容器。它对内容或布局没有影响。除非以某种方式使用 CSS 对其进行样式设置（例如，直接应用样式，或者对其父元素应用某种布局模型，如弹性盒子），否则它对内容或布局没有影响。一般用于网页页面框架和构图的搭建，分层分级控制网页元素，更加直观
+                        作为一个“纯粹的”容器， 元素本身并不表示任何内容。相反，它用于组织内容，以便通过使用 class 或 id 属性轻松应用样式，标记文档中以不同语言编写的部分（使用 lang 属性）等等。</p>
+
+                        <p><code class="super-color">&lt;nav&gt;</code>:导航元素</p>
+                        <pre class="code-text">
+                            <span class="super-color">&lt;nav&gt;</span>
+                                <span class="super-color">&lt;p&gt;</span>这是一段文本<span class="super-color">&lt;p&gt;</span>
+                                <span class="super-color">&lt;p&gt;</span>这是一段文本<span class="super-color">&lt;p&gt;</span>
+                            <span class="super-color">&lt;/nav&gt;</span>
+                        </pre>
+                        <p><code class="super-color">&lt;p&gt;</code>: 元素表示文本的一个段落。在视觉媒体中，段落通常表现为用空行和/或首行缩进与相邻段落分隔的文本块，但 HTML 段落可以是相关内容的任何结构分组，如图像或表格字段。
+                        段落是块级元素，如果在关闭的 <code class="super-color">&lt;/p&gt;</code> 标签之前解析了另一个块级元素，则该标签将自动关闭。请参阅下面的“标签省略”。</p>
+                        <p class="code-text"><code><span class="super-color">&lt;p&gt;</span>这是一段文本<span class="super-color">&lt;/p&gt;</span></code></p>
+                        <p><code class="super-color">&lt;span&gt;</code>:内容跨越元素</p>
+                        <p><code class="super-color">&lt;span&gt;</code>元素是一个通用的行级容器，本身不具备特殊含义。它可被用于对元素进行编组，以便于添加样式（通过使用 <span class="super-color">class</span> 或 <span class="super-color">id</span> 属性），或共享属性值（例如<span class="super-color">lang</span>属性）。该元素仅应在无其他合适语义元素时使用。与<span class="super-color">&lt;div&gt;</span>元素非常相似，但是<span class="super-color">&lt;div&gt;</span>是块级元素，而<span class="super-color">&lt;span&gt;</span>是一个行级元素。</p>
+                        <pre class="code-text">
+                            <span class="super-color">&lt;p&gt;</span>这是一段<span class="super-color">&lt;span style</span>=<span style="color: burlywood;">"color:red;"</span><span class="super-color">&gt;</span>文本<span class="super-color">&lt;/span&gt;&lt;/p&gt;</span>
+                            
+                            结果如下：
+                            这是一段</span><span style="color: red;">文本</span>
+                        </pre>
+                        <p>button元素</p>
+                        <p>header元素</p>
+                        <p>code元素</p>
+                        <p>img元素</p>
+                        <p>ol元素</p>
+                        <p>ul元素</p>
+                        <p>li元素</p>
+                        <p>另外以下是我觉得很特殊的元素</p>
+                        <p>head元素</p>
+                        <p>body元素</p>
+                        <p>header元素</p>
+                        <p>main元素</p>
+                        <p>article元素</p>
+                        <p>footer元素</p>
+                    </article>
+                    <!--常用属性-->
+                    <article id="section1-1-2" class="article">
+                        <h2>常用属性</h2>
+                        <p>这里是正文</p>
                     </article>
                 </div>
             </div>
