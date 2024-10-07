@@ -117,7 +117,8 @@ form {
 html {
     font-size: 15px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
     font-family: "Open Sans", sans-serif; /* 这应该是你从 Google Fonts 得到的其余输出。 */
-    background-color: #7fc4fc9a;
+    background-color: #f8f8f8;
+    
 }
 body {
     width: 1200px;/*width：元素的宽度*/
@@ -126,7 +127,6 @@ body {
     padding: 110px 30px 30px 30px;/*padding（内边距）：是指内容周围的空间。在下面的例子中，它是段落文本周围的空间。*/
     border: 2px solid black;/*border（边框）：是紧接着内边距的线。*/
 }
-
 .button1 {
   margin: 10px;
   padding: 10px 20px;
