@@ -154,31 +154,60 @@
                                 <span class="super-color">&lt;p&gt;</span>这是一段文本<span class="super-color">&lt;p&gt;</span>
                             <span class="super-color">&lt;/nav&gt;</span>
                         </pre>
+
                         <p><code class="super-color">&lt;p&gt;</code>: 元素表示文本的一个段落。在视觉媒体中，段落通常表现为用空行和/或首行缩进与相邻段落分隔的文本块，但 HTML 段落可以是相关内容的任何结构分组，如图像或表格字段。
                         段落是块级元素，如果在关闭的 <code class="super-color">&lt;/p&gt;</code> 标签之前解析了另一个块级元素，则该标签将自动关闭。请参阅下面的“标签省略”。</p>
                         <p class="code-text"><code><span class="super-color">&lt;p&gt;</span>这是一段文本<span class="super-color">&lt;/p&gt;</span></code></p>
+
                         <p><code class="super-color">&lt;span&gt;</code>:内容跨越元素</p>
                         <p><code class="super-color">&lt;span&gt;</code>元素是一个通用的行级容器，本身不具备特殊含义。它可被用于对元素进行编组，以便于添加样式（通过使用 <span class="super-color">class</span> 或 <span class="super-color">id</span> 属性），或共享属性值（例如<span class="super-color">lang</span>属性）。该元素仅应在无其他合适语义元素时使用。与<span class="super-color">&lt;div&gt;</span>元素非常相似，但是<span class="super-color">&lt;div&gt;</span>是块级元素，而<span class="super-color">&lt;span&gt;</span>是一个行级元素。</p>
                         <pre class="code-text">
-                            <span class="super-color">&lt;p&gt;</span>这是一段<span class="super-color">&lt;span style</span>=<span style="color: burlywood;">"color:red;"</span><span class="super-color">&gt;</span>文本<span class="super-color">&lt;/span&gt;&lt;/p&gt;</span>
+                            <span class="super-color">&lt;p&gt;</span>这是一段<span class="super-color">&lt;span</span> <span style="color: aqua;">style</span>=<span style="color: chocolate;">"color:red;"</span><span class="super-color">&gt;</span>文本<span class="super-color">&lt;/span&gt;&lt;/p&gt;</span>
                             
                             结果如下：
                             这是一段</span><span style="color: red;">文本</span>
                         </pre>
-                        <p>button元素</p>
-                        <p>header元素</p>
-                        <p>code元素</p>
-                        <p>img元素</p>
-                        <p>ol元素</p>
-                        <p>ul元素</p>
-                        <p>li元素</p>
+                        <p><code class="super-color">&lt;button&gt;</code>：按钮元素</p>
+                        <p>该元素表示一个按钮，常用于可以交互的简单按钮上</p>
+
+                        <p><code class="super-color">&lt;code&gt;</code>：行内代码元素</p>
+                        <pre class="code-text">
+                            原文<span class="super-color">&lt;code&gt;&lt;p&gt;</span>你好世界<span class="super-color">&lt;/p&gt;&lt;/code&gt;</span>
+
+                            结果<span style="background-color: dimgray; border-radius: 3px; padding: 3px;"><span class="super-color">&lt;code&gt;&lt;p&gt;</span>你好世界<span class="super-color">&lt;/p&gt;&lt;/code&gt;</span></span>
+                        </pre>
+
+                        <p><code class="super-color">&lt;img&gt;</code>：图片元素</p>
+                        <p>该元素用于展示图片</p>
+                        <pre class="code-text">
+                            原文：<span class="super-color">&lt;img</span>  <span style="color: aqua;">src</span>=<span style="color: chocolate;">"images/0.jig.jpg"</span> <span style="color: aqua;">alt</span>=<span style="color: chocolate;">"Logo"</span><span class="super-color">&gt;</span>
+                            结果：<img src="images/0.jig.jpg" alt="Logo" style="height: 100px;width: 100px;">
+                        </pre>
+                        
+                        <p><code class="super-color">&lt;ol&gt;</code>：有序列表元素</p>
+                        <pre class="code-text">
+                            原文：  <span class="super-color">&lt;ol&gt;</span>
+                                        <span class="super-color">&lt;li&gt;</span>内容1<span class="super-color">&lt;/li&gt;</span>
+                                        <span class="super-color">&lt;li&gt;</span>内容2<span class="super-color">&lt;/li&gt;</span>
+                                        <span class="super-color">&lt;li&gt;</span>内容3<span class="super-color">&lt;/li&gt;</span>
+                                    <span class="super-color">&lt;/ol&gt;</span>
+                            结果:   <ol>
+                                        <li>内容1</li>
+                                        <li>内容2</li>
+                                        <li>内容3</li>
+                                    </ol>
+                        </pre>
+                        <p><code class="super-color">&lt;ul&gt;</code>：无序列表元素</p>
+                        <p>与上一个用法一致</p>
+                        <p><code class="super-color">&lt;li&gt;</code>：列表项元素</p>
                         <p>另外以下是我觉得很特殊的元素</p>
-                        <p>head元素</p>
-                        <p>body元素</p>
-                        <p>header元素</p>
-                        <p>main元素</p>
-                        <p>article元素</p>
-                        <p>footer元素</p>
+                        <p><code class="super-color">&lt;head&gt;</code>:文档元数据（头部）元素</p>
+                        <p><code class="super-color">&lt;body&gt;</code>元素</p>
+                        <p><code class="super-color">&lt;header&gt;</code>：页眉元素</p>
+                        <p>该元素用于展示介绍性内容，通常包含一组介绍性的或是辅助导航的实用元素。它可能包含一些标题元素，但也可能包含其他元素，比如 Logo、搜索框、作者名称，等等。</p>
+                        <p><code class="super-color">&lt;main&gt;</code>元素</p>
+                        <p><code class="super-color">&lt;article&gt;</code>元素</p>
+                        <p><code class="super-color">&lt;footer&gt;</code>元素</p>
                     </article>
                     <!--常用属性-->
                     <article id="section1-1-2" class="article">
